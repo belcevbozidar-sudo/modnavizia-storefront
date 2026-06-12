@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Set up global elements & interception
   setupNetworkInterception();
   setupGlobalCartDrawer();
+  setupMobileMenu();
   setupSearch();
   updateGlobalCartBadges();
 
@@ -260,6 +261,54 @@ function setupGlobalCartDrawer() {
 
   // Render original initial load
   renderLocalCartDrawer();
+}
+
+// Mobile Hamburger Menu Activation
+function setupMobileMenu() {
+  const headerDrawer = document.querySelector('header-drawer');
+  if (!headerDrawer) return;
+
+  const details = headerDrawer.querySelector('details');
+  const summary = headerDrawer.querySelector('summary');
+  const closeBtn = headerDrawer.querySelector('.menu-drawer__close-button');
+  const backdrop = headerDrawer.querySelector('.menu-drawer__backdrop');
+
+  if (!details || !summary) return;
+
+  const openMenu = () => {
+    details.setAttribute('open', '');
+    details.classList.add('menu-open');
+    document.body.classList.add('overflow-hidden');
+  };
+
+  const closeMenu = () => {
+    details.removeAttribute('open');
+    details.classList.remove('menu-open');
+    document.body.classList.remove('overflow-hidden');
+  };
+
+  summary.addEventListener('click', (e) => {
+    e.preventDefault();
+    if (details.hasAttribute('open')) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  });
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      closeMenu();
+    });
+  }
+
+  if (backdrop) {
+    backdrop.addEventListener('click', (e) => {
+      e.preventDefault();
+      closeMenu();
+    });
+  }
 }
 
 // Populate Cart Drawer inner HTML dynamically with local items

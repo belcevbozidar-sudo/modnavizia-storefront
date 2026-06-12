@@ -3,7 +3,7 @@
   class="no-js"
   lang="bg"
 >
-  <head><link href="/overflow-list.css" rel="stylesheet" type="text/css">
+  <head><script>window.Shopify = window.Shopify || { designMode: false };</script><link href="/overflow-list.css" rel="stylesheet" type="text/css">
 <link href="/base.css" rel="stylesheet" type="text/css">
 <link
         rel="icon" type="image/png" href="/logo.png"
@@ -3238,108 +3238,55 @@ uppercase;
 
 </div><div id="shopify-section-template--25186112897409__marquee_PXxpip" class="shopify-section">
 
-<script
-  src="https://prestorebg.com/cdn/shop/t/2/assets/marquee.js?v=8415548840182878611754212853"
-  type="module"
-  fetchpriority="low"
-></script>
-
-
-
-<div class="section-background color-scheme-6af9d79a-ddf9-4986-9a9a-2de30a0c8bd1"></div>
-<marquee-component
-  class="section spacing-style gap-style color-scheme-6af9d79a-ddf9-4986-9a9a-2de30a0c8bd1"
-  style="--padding-block-start: 8px;--padding-block-end: 8px;;
-    --marquee-gap: max(24px, calc(var(--gap-scale, 1.0) * 100px));
-    --marquee-direction: normal;
-  "
-  data-speed-factor="20"
-  data-movement-direction="normal"
->
-  <div
-    class="marquee__wrapper"
-    ref="wrapper"
-  >
-    <div
-      class="marquee__content"
-      ref="content"
-    >
-      <div class="marquee__repeated-items">
-        
-
-
-
-
-
-
-
-  <rte-formatter 
-  class=" spacing-style text-block text-block--AN2hRTGRvNUtvNlhKN__text_FdjcWt rte
-     rte 
-  "
-
-  style="
-    --padding-block-start: 0px; --padding-block-end:0px; 
---padding-inline-start:0px; --padding-inline-end:0px; 
-
-    
-
-    --width: fit-content;
-    --max-width: var(--max-width--body-normal);
-    
-    
-  "
-
-  
->
-    <p>БЕЗПЛАТНА ДОСТАВКА</p>
-  </rte-formatter>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <rte-formatter 
-  class=" spacing-style text-block text-block--AM1pWT1NnOUFXS3RnM__text_wJeXkR rte
-     rte 
-  "
-
-  style="
-    --padding-block-start: 0px; --padding-block-end:0px; 
---padding-inline-start:0px; --padding-inline-end:0px; 
-
-    
-
-    --width: fit-content;
-    --max-width: var(--max-width--body-normal);
-    
-    
-  "
-
-  
->
-    <p>PROMOCOD -5%</p>
-  </rte-formatter>
-
-
-
-
-
-
-
-      </div>
-    </div>
+<div class="custom-marquee">
+  <div class="custom-marquee-inner">
+    <div class="custom-marquee-item">БЕЗПЛАТНА ДОСТАВКА</div>
+    <div class="custom-marquee-separator">⚡</div>
+    <div class="custom-marquee-item">PROMOCOD -5%</div>
+    <div class="custom-marquee-separator">⚡</div>
+    <div class="custom-marquee-item">БЕЗПЛАТНА ДОСТАВКА</div>
+    <div class="custom-marquee-separator">⚡</div>
+    <div class="custom-marquee-item">PROMOCOD -5%</div>
+    <div class="custom-marquee-separator">⚡</div>
+    <div class="custom-marquee-item">БЕЗПЛАТНА ДОСТАВКА</div>
+    <div class="custom-marquee-separator">⚡</div>
+    <div class="custom-marquee-item">PROMOCOD -5%</div>
+    <div class="custom-marquee-separator">⚡</div>
+    <div class="custom-marquee-item">БЕЗПЛАТНА ДОСТАВКА</div>
+    <div class="custom-marquee-separator">⚡</div>
+    <div class="custom-marquee-item">PROMOCOD -5%</div>
+    <div class="custom-marquee-separator">⚡</div>
   </div>
-</marquee-component>
+  <div class="custom-marquee-inner" aria-hidden="true">
+    <div class="custom-marquee-item">БЕЗПЛАТНА ДОСТАВКА</div>
+    <div class="custom-marquee-separator">⚡</div>
+    <div class="custom-marquee-item">PROMOCOD -5%</div>
+    <div class="custom-marquee-separator">⚡</div>
+    <div class="custom-marquee-item">БЕЗПЛАТНА ДОСТАВКА</div>
+    <div class="custom-marquee-separator">⚡</div>
+    <div class="custom-marquee-item">PROMOCOD -5%</div>
+    <div class="custom-marquee-separator">⚡</div>
+    <div class="custom-marquee-item">БЕЗПЛАТНА ДОСТАВКА</div>
+    <div class="custom-marquee-separator">⚡</div>
+    <div class="custom-marquee-item">PROMOCOD -5%</div>
+    <div class="custom-marquee-separator">⚡</div>
+    <div class="custom-marquee-item">БЕЗПЛАТНА ДОСТАВКА</div>
+    <div class="custom-marquee-separator">⚡</div>
+    <div class="custom-marquee-item">PROMOCOD -5%</div>
+    <div class="custom-marquee-separator">⚡</div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -6033,6 +5980,10 @@ rgb(var(--color-border-rgb) / 1.0); --border-radius:
     const slider = new Swiper(".slider-slider-template--25186112897409__ss_slider_2_Bb8QbE", {
       effect: "coverflow",
       centeredSlides: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
       navigation: {
         nextEl: '.slider-btn-next-template--25186112897409__ss_slider_2_Bb8QbE',
         prevEl: '.slider-btn-prev-template--25186112897409__ss_slider_2_Bb8QbE'
