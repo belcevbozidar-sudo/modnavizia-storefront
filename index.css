@@ -192,7 +192,7 @@ header {
 }
 
 .header-logo img {
-  height: 38px;
+  height: 55px;
   width: auto;
 }
 
@@ -556,7 +556,7 @@ header {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  height: 38px;
+  height: 55px;
 }
 
 .product-card-price-container {
