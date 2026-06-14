@@ -1559,6 +1559,9 @@ footer {
   justify-content: center !important;
   height: 40px !important;
   width: 180px !important;
+  justify-self: center !important; /* Center horizontally in CSS grid cell */
+  align-self: center !important;   /* Center vertically in CSS grid cell */
+  margin: 0 auto !important;
 }
 
 .header-logo__image-container {
@@ -1584,13 +1587,12 @@ footer {
 
 @media (max-width: 767px) {
   .header-logo {
-    position: absolute !important;
-    left: 50% !important;
-    top: 50% !important;
-    transform: translate(-50%, -50%) !important;
-    width: 180px !important;
+    width: 150px !important;
     height: 40px !important;
-    margin: 0 !important;
+  }
+  .header-logo__image {
+    height: 105px !important; /* Prominent size on mobile */
+    max-height: 105px !important;
   }
 }
 
